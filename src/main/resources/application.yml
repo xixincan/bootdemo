@@ -1,0 +1,12 @@
+#person:
+#  name: zhangsan
+#  age: 23
+#  boss: false
+#  birth: 2019/04/25
+#  map: {key1: 1, key2: 2}
+#  list:
+#    - Linus
+#    - Gates
+#  dog:
+#    name: 汪汪
+#    age: 2
