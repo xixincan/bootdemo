@@ -10,3 +10,6 @@
 #  dog:
 #    name: 汪汪
 #    age: 2
+spring:
+  profiles:
+    active: @env111@

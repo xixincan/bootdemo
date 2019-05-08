@@ -3,6 +3,7 @@ package cn.exp.demo.config;
 import cn.exp.demo.service.HelloService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 
 /**
  * @Configuration:指明当前的类是一个配置类，就是代替之前的spring的xml配置文件
@@ -12,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * @Version 1.0
  */
 @Configuration
+@Profile(value = "dev")
 public class BeanConfig {
 
     /**

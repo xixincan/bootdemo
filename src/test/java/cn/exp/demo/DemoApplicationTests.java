@@ -1,5 +1,6 @@
 package cn.exp.demo;
 
+import cn.exp.demo.bean.MultiEnv;
 import cn.exp.demo.bean.Person;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,6 +23,9 @@ public class DemoApplicationTests {
     @Autowired
     private ApplicationContext ioc;
 
+    @Autowired
+    private MultiEnv multiEnv;
+
 	@Test
 	public void contextLoads() {
         System.out.println(person);
@@ -30,5 +34,10 @@ public class DemoApplicationTests {
 	@Test
 	public void test() {
         System.out.println(this.ioc.containsBean("helloService"));
+    }
+
+    @Test
+    public void testMultiEnv() {
+        System.out.println(multiEnv);
     }
 }
